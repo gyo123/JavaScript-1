@@ -1,0 +1,34 @@
+<html>
+<head>
+
+<title>Aula 8 - JavaScript - RL System</title>
+
+
+<script type="text/javascript">
+	/*var sorte = 30;
+	var numero = 0;
+
+	while (numero != sorte){
+		numero = window.prompt("Digite o número da sorte:");
+	}*/
+
+	function changePhoto1(){
+		document.getElementById("foto").setAttribute("src", "desert.jpg");
+	}
+
+	function changePhoto2(){
+		document.getElementById("foto").setAttribute("src", "lighthouse.jpg");
+		//document.getElementById("foto").setAttribute("width", "50");
+	}
+</script>
+
+
+
+</head>
+
+<body>
+	<img src="desert.jpg" width="450" height="450" id="foto" onmouseover="changePhoto2();" 
+	onmouseout="changePhoto1();">
+</body>
+
+</html>

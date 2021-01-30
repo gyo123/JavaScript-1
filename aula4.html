@@ -1,0 +1,38 @@
+<html>
+<head>
+	<title>Aula 4 - JavaScript - RL System</title>
+
+<script type="text/javascript">
+	var b1 = window.prompt("Digite a nota 1:");
+	var b2 = window.prompt("Digite a nota 2:");
+	var b3 = window.prompt("Digite a nota 3:");
+	var b4 = window.prompt("Digite a nota 4:");
+	var resultado = (parseInt(b1) + parseInt(b2) + parseInt(b3) + parseInt(b4)) / 4;
+	
+	/*
+	if (resultado > 5.99){
+     	        alert('Com uma nota de ' + resultado + ' você foi aprovado.');
+	} else {
+		alert('Com uma nota de ' + resultado + ' infelizmente você foi reprovado.');
+	}
+        */
+
+	if (resultado <= 5){
+		alert('Com uma nota de ' + resultado + ' infelizmente você foi reprovado.');
+	} else if ( (resultado > 5) && (resultado < 6.1) ){
+		 alert('Com uma nota de ' + resultado + ' você precisa fazer uma nova prova.');
+	} else if ( (resultado >= 6.1) && (resultado < 10) ) {
+		 alert('Com uma nota de ' + resultado + ' você foi aprovado.');
+	} else {
+		alert('Você foi um ótimo aluno.');
+	}
+
+</script>
+
+</head>
+
+<body>
+	<h1>IF, ELSE</h1>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title>Aula 7 - JavaScript - RL System</title>
+
+<script type="text/javascript" src="funcoes-mascaras.js"></script>
+
+<script type="text/javascript">
+	
+	for (var i = 0; i < 10; i++){
+		alert('Olá');
+	}
+	
+
+</script>
+
+
+
+</head>
+
+<body>
+	<h3>Cadastro</h3>
+	Nome: <input type="text"/>
+	<br></br>
+	Data de Nascimento: <input type="text" id="txtData" maxlength="10" onkeyup="mask_date();"/>
+	<br></br>
+	CEP: <input type="text" id="txtCEP" onkeyup="mask_cep();"/>
+	<br></br>
+	Telefone: <input type="text" id="txtPhone" onkeyup="mask_phone();"/>
+	<br></br>
+	<input type="button" value="Cadastrar">
+</body>
+
+</html>

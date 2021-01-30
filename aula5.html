@@ -1,0 +1,58 @@
+<html>
+<head>
+	<title>Aula 6 - JavaScript Básico  - RL System</title>
+
+<script type="text/javascript">
+	
+	function mascara(){
+		var n_char = document.getElementById("txtData1").value.length;
+
+		if(n_char == 2){
+
+			document.getElementById("txtData1").value = document.getElementById("txtData1").value + "/";
+
+			
+		}
+		else if (n_char == 5){
+
+			document.getElementById("txtData1").value = document.getElementById("txtData1").value + "/";
+
+
+		}
+
+		
+	}
+	function phonee(){
+
+		var n2 = document.getElementById("txtPhone").value.length;
+
+		if(n2 == 5){
+			document.getElementById("txtPhone").value = document.getElementById("txtPhone").value + "-";
+
+
+		}
+
+	}
+
+</script>
+
+</head>
+
+<body>
+   <h2> Cadastro para namorar o Gyo</h2>
+
+<br></br>
+   <p>Nome: <input type="text"/> </p>
+   <br></br>
+   Dt. de Nascimento: <input type="text" id="txtData1" maxlength="10" onkeyup="mascara( );"/>
+   <br></br>
+   Telefone com DDD: <input type="tel" maxlength="10"/> <input type="text" id="txtPhone" onkeyup="phonee( );"/>
+   
+   
+   <br></br>
+   
+   <input type="button" value="Enviar"/>
+	
+</body>
+
+</html>
